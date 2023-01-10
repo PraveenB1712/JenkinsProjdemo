@@ -45,11 +45,11 @@ pipeline{
                   sh 'mvn package'
               }
           }
-          stage('deployment'){
+          stage('deploymnt'){
 		  
               steps{
 		  
-                  sf 'e'
+                  echo 'hello'
               }
           }
 	     
