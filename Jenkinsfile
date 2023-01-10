@@ -30,6 +30,7 @@ pipeline{
           }
            stage('UnitTest'){
 		  
+		   
               steps{
 	         
                   sh 'mvn test'
@@ -42,6 +43,13 @@ pipeline{
               steps{
 		  
                   sh 'mvn package'
+              }
+          }
+          stage('deployment'){
+		  
+              steps{
+		  
+                  sf 'e'
               }
           }
 	     
